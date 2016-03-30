@@ -46,6 +46,8 @@ $(document).ready(function(){
           break;
         case "rain": weatherImg = "http://res.cloudinary.com/gabihuizar/image/upload/v1458965362/rain.png";
           break;
+        case "light rain": weatherImg = "http://res.cloudinary.com/gabihuizar/image/upload/v1458965362/rain.png";
+          break;
         case "thunderstorm": weatherImg = "http://res.cloudinary.com/gabihuizar/image/upload/v1458965362/thunderstorm.png";
           break;
         case "snow": weatherImg = "http://res.cloudinary.com/gabihuizar/image/upload/v1458965361/snow.png";
