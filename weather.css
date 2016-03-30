@@ -1,0 +1,55 @@
+body {
+  background: #AFBFC0;
+}
+#toggle {
+  float: right;
+  text-align: right;
+  margin-top: 1%;
+  font-family: 'Asap', sans-serif;
+}
+#toggle a {
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+}
+#toggle a:hover {
+  background: #92FFDF;
+  color: #AFBFC0;
+  text-decoration: none;
+}
+#title {
+  color: #92FFDF;
+  font-family: 'Lobster', cursive;
+  font-size: 400%;
+  text-align: center;
+}
+#weather {
+  margin-top: 2%;
+  text-align: center;
+  color: white;
+}
+#weather img {
+  width: 50%;
+}
+#weather h2 {
+  font-family: 'Asap', sans-serif;
+  font-size: 200%
+}
+#madeby {
+  margin-top: 5%;
+  display: block;
+  text-align: center;
+  color: #92FFDF;
+  font-family: 'Lobster', cursive;
+}
+@media screen and (min-width: 700px) {
+  #title {
+    font-size: 600%;
+  }
+  #weather img {
+  width: 35%;
+}
+  #weather h2 {
+    font-size: 300%;
+  }
+}
