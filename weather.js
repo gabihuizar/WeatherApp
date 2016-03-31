@@ -34,23 +34,42 @@ $(document).ready(function(){
       var weatherImg ;
       
       switch(description) {
-        case "clear sky": weatherImg = "http://res.cloudinary.com/gabihuizar/image/upload/v1458965362/sunny.png";
+        case "clear sky": 
+          weatherImg = "http://res.cloudinary.com/gabihuizar/image/upload/v1458965362/sunny.png";
           break;
-        case "few clouds": weatherImg = "http://res.cloudinary.com/gabihuizar/image/upload/v1458965361/partlycloudy.png";
+        case "few clouds":
+        case "scattered clouds":
+        case "broken clouds":
+          weatherImg = "http://res.cloudinary.com/gabihuizar/image/upload/v1458965361/partlycloudy.png";
           break;
-        case "scattered clouds": weatherImg = "http://res.cloudinary.com/gabihuizar/image/upload/v1458965362/overcast.png";
+        case "overcast clouds": 
+          weatherImg = "http://res.cloudinary.com/gabihuizar/image/upload/v1458965362/overcast.png";
           break;
-        case "broken clouds": weatherImg = "http://res.cloudinary.com/gabihuizar/image/upload/v1458965362/overcast.png";
+        case "shower rain and drizzle":
+        case "shower drizzle":
+        case "shower rain": 
+        case "extreme rain":
+          weatherImg = "http://res.cloudinary.com/gabihuizar/image/upload/v1458965361/showers.png";
           break;
-        case "shower rain": weatherImg = "http://res.cloudinary.com/gabihuizar/image/upload/v1458965361/showers.png";
+        case "rain": 
+        case "drizzle":
+        case "drizzle rain":
+        case "light rain":
+        case "moderate rain":
+        case "very heavy rain":
+          weatherImg = "http://res.cloudinary.com/gabihuizar/image/upload/v1458965362/rain.png";
           break;
-        case "rain": weatherImg = "http://res.cloudinary.com/gabihuizar/image/upload/v1458965362/rain.png";
+        case "thunderstorm": 
+        case "thunderstorm with light rain":
+        case "thunderstorm with rain":
+        case "thunderstorm with heavy rain":
+        case "heavy thunderstorm":
+          weatherImg = "http://res.cloudinary.com/gabihuizar/image/upload/v1458965362/thunderstorm.png";
           break;
-        case "thunderstorm": weatherImg = "http://res.cloudinary.com/gabihuizar/image/upload/v1458965362/thunderstorm.png";
-          break;
-        case "snow": weatherImg = "http://res.cloudinary.com/gabihuizar/image/upload/v1458965361/snow.png";
-          break;
-        case "mist": weatherImg = "http://res.cloudinary.com/gabihuizar/image/upload/v1458965361/cloudynight.png";
+        case "snow": 
+        case "light snow":
+        case "heavy snow":
+          weatherImg = "http://res.cloudinary.com/gabihuizar/image/upload/v1458965361/snow.png";
           break;
         default: weatherImg = "http://res.cloudinary.com/gabihuizar/image/upload/v1458965361/cloudynight.png";
           break;
