@@ -19,7 +19,7 @@ $(document).ready(function(){
     latitude = position.coords.latitude;
     longitude = position.coords.longitude; 
     /*weather api call*/
-    var url = "http://api.openweathermap.org/data/2.5/weather?" + "lat=" + latitude + "&lon=" + longitude + "&APPID=d1e0afcb6a36e038a53695a1dfab650c";
+    var url = "https://api.openweathermap.org/data/2.5/weather?" + "lat=" + latitude + "&lon=" + longitude + "&APPID=d1e0afcb6a36e038a53695a1dfab650c";
     /*gets all weather data*/
     $.getJSON(url, function(json) {
       temp = Math.round(json.main.temp * (9/5) - 459.67); /*converts kelvin to fahr*/
